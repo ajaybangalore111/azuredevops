@@ -1,0 +1,533 @@
+3rd Feb 2026
+=============
+
+-> Azure DevOps  Course
+
+    -> Azure Cloud 
+
+    -> DevOps Tools 
+
+    -> Azure DevOps 
+
+
+-> Azure Cloud 
+
+    -> On Cloud We Host Applications 
+
+        -> https://www.myntra.com/
+
+    -> Any Application has Data 
+
+        -> WRT Myntra we have products, prices, quantity, images etc 
+    
+    -> Where is this Data stored ? 
+
+        -> Data is in Servers 
+
+    -> What is a Server ?
+
+        -> A Server is a computer system, that takes a Request and Sends Response 
+
+            -> https://upload.wikimedia.org/wikipedia/commons/thumb/c/c9/Client-server-model.svg/1280px-Client-server-model.svg.png
+
+    -> Where is this Server stored ? 
+
+        -> Servers are Hosted / Located inside a "Datacenter" 
+
+    -> Data Center 
+
+        -> A Data Center is a building, a dedicated space within the building or 
+        a group of buildings, used to house computer systems and associated components
+        such as telecommunication and storage systems.
+
+            -> https://datacenters.microsoft.com/wp-content/uploads/2025/11/OMB-Datacenter-11_11-Hero.jpg
+
+            -> https://thumbs.dreamstime.com/b/server-room-data-center-panorama-racks-servers-190602744.jpg
+
+        
+    -> Cons Of Managing Physical Datacenter
+
+        -> Buy Physical Place 
+        -> Buying Devices [CPU, RAM, HDD, Routers etc]
+        -> Buy AC's, Humidifiers, Cables etc 
+        -> Hire Human Resources [Physical Security, System Admins, Network Admins etc]
+        -> etc 
+
+    -> To Overcome Above Issues, we can opt for Cloud Computing 
+
+    -> Cloud Computing
+
+        -> The Cloud refers to "On-Demand" availability of Compute Power, 
+        Database Storage, Applications and Other IT Resources through a 
+        Cloud Platform(Azure, AWS, GCP, OCI etc) via "Internet" with
+        "Pay As You Go" Pricing.
+
+        -> Cloud Computing can be compared to Online Ride Services 
+
+            -> Ola, Uber, Rapido etc 
+
+            -> Bike, Car, On-demand, Schedule etc  
+
+        -> Cloud Has Vendors 
+
+            -> Azure, AWS, GCP etc 
+
+            -> Cloud Vendors Provide Services like IAAS, PAAS & SAAS.
+
+    
+    -> Cloud Offerings 
+
+        -> Infrastructure As A Service - IAAS
+
+            -> Requirement: Setup MySQL Database Server 
+
+            -> Managed By Cloud Vendor 
+
+                -> Hardware 
+                -> Virtualization
+                    -> https://www.cloud4u.com/upload/medialibrary/e69/what-is-a-virtualization-techology.png
+
+            -> Managed By User
+
+                    -> Select OS (Linux, Win etc)
+                    -> Setup Private Subnets 
+                    -> Setup Bastion Host 
+                    -> Manage NAT 
+                    -> Download MySQL Database Server
+                    -> Install MySQL Database Server
+                    -> Secure MySQL Database Server
+                    -> Backup MySQL Database Server
+                    -> Next On Top of it Application Can be built 
+
+        -> Platform As A Service - PAAS
+
+            -> Requirement: Setup MySQL Database Server 
+
+            -> Managed By Cloud Vendor 
+
+                -> Hardware 
+                -> Virtualization
+                    -> https://www.cloud4u.com/upload/medialibrary/e69/what-is-a-virtualization-techology.png
+                    -> Select OS (Linux, Win etc)
+                    -> Setup Private Subnets 
+                    -> Setup Bastion Host 
+                    -> Manage NAT 
+                    -> Download MySQL Database Server
+                    -> Install MySQL Database Server
+                    -> Secure MySQL Database Server
+                    -> Backup MySQL Database Server
+            
+            -> Managed By User        
+                    
+                -> Next On Top of it Application Can be built 
+
+            -> NOTE: Above is a good choice for Developer Centric Teams 
+
+                -> https://azure.microsoft.com/en-in/pricing/calculator/
+
+
+        -> Software As A Service - SAAS
+
+            -> Requirement: Setup MySQL Database Server For An Application
+
+            -> Managed By Cloud Vendor 
+
+                -> Hardware 
+                -> Virtualization
+                    -> https://www.cloud4u.com/upload/medialibrary/e69/what-is-a-virtualization-techology.png
+                    -> Select OS (Linux, Win etc)
+                    -> Setup Private Subnets 
+                    -> Setup Bastion Host 
+                    -> Manage NAT 
+                    -> Download MySQL Database Server
+                    -> Install MySQL Database Server
+                    -> Secure MySQL Database Server
+                    -> Backup MySQL Database Server
+                    -> Next On Top of it Application Can be built 
+            
+            -> Managed By User        
+                    
+                -> Nothing 
+
+        -> NOTE: Different Offerings From Azure Cloud
+
+            -> https://i.ytimg.com/vi/JAcKVIwQ-5s/maxresdefault.jpg
+
+        -> Solution - 1
+
+            -> Using Only IAAS We can build 
+
+            -> We Want to Build Ecommerce Application
+
+                -> Web Server - Virtual Machines (IAAS)
+                -> App Server - Virtual Machines (IAAS)
+                -> DB Server  - Virtual Machines (IAAS)
+
+        -> Solution - 2
+
+            -> Using IAAS + PAAS We can build 
+
+            -> We Want to Build Ecommerce Application
+
+                -> Web Server - Virtual Machines (IAAS)
+                -> App Server - Virtual Machines (IAAS)
+                -> DB Server  - SQL Server (PAAS)
+
+        -> Solution - 3
+
+            -> Using IAAS + PAAS + SAAS also We can build
+
+    
+    -> Cloud Types / Models 
+
+        -> Public Cloud 
+
+            -> Public cloud resources are shared with multiple tenants. 
+
+        -> Private Cloud 
+
+            -> Private means services are offered to selected entity only i.e One tenant
+
+        -> Hybrid Cloud 
+
+            -> Hybrid cloud is a mix of private and public cloud.
+
+    
+    -> Azure Cloud Goal is to host Applications On Cloud 
+
+    -> Traditional Approach (Setting Up Applications On Physical Datacenter)
+
+        -> Myntra Application 
+
+            -> Servers 
+                +
+            -> Storage 
+                +
+            -> Databases        ========>   Application 
+                +
+            -> Networking 
+                +
+            -> Security 
+                +
+            -> etc 
+
+    -> New Approach (Setting Up Applications On Cloud Datacenter - On Azure)
+
+        -> Myntra Application 
+
+            -> Servers      - Azure Virtual Machines Service   
+                +                   +
+            -> Storage      - Azure Disk, Storage Accounts, FileShares Services
+                +                   +
+            -> Databases    - Azure SQL Service                                     ========>   Application 
+                +                   +
+            -> Networking   - Azure Virtual Network Service
+                +                   +
+            -> Security     - Azure Entra ID Service
+                +                   +
+            -> etc          - Other Azure Services 
+
+    
+    -> Once Application is built on Cloud 
+
+        -> Application should have following characteristics (Four Pillars Of Cloud)
+
+            -> High Availability
+
+                -> High Availability in Azure ensures Applications are continuously 
+                Accessible & Operational (24X7) i.e Uptime 99.9% and Above 
+
+            -> Fault Tolerance 
+
+                -> Fault Tolerance in Azure is an ability of the systems to continue 
+                operating without interruption in the event of Hardware Failures i.e "Self Healing" 
+
+            -> Scalability 
+
+                -> Scalability in Azure is an ability of the systems to handle the 
+                increasing workloads and accommodate according to Growing Demands.
+
+            -> Security 
+
+                -> Security in Azure refers to measures taken to protect cloud Resources, Data and 
+                Applications from Unauthorized Access 
+
+
+5th Feb 2026
+=============
+
+    -> Infrastructure As A Service - IAAS
+
+        -> Azure Global Infra - https://azure.microsoft.com/en-in/global-infrastructure/
+
+            -> 70+ Azure regions | 400+ datacenters
+
+            -> https://datacenters.microsoft.com/globe/explore/
+
+        -> Azure Infrastructure is made of 
+
+            -> Regions 
+
+            -> Availability Zones 
+
+        -> Regions 
+
+            -> Azure regions are distinct, geographically dispersed locations containing at least one, 
+            but often multiple, datacenters to provide global service coverage.
+
+            -> 70+ Azure regions 
+
+            -> Always Select Regions Based On Customers Locations(Nearest)
+
+        -> Availability Zones 
+
+            -> Availability Zones (AZs) are physically separate, isolated datacenters within a region, 
+            featuring independent power, cooling, and networking to ensure 
+            high availability and fault tolerance
+
+            -> Availability Zones are spaced apart (often within 100km) to withstand local outages.
+
+            -> Always Select Availability Zones for critical applications requiring high availability 
+            (e.g., VMs, databases) to protect against datacenter-level failures. 
+
+            -> https://azurelib.com/wp-content/uploads/2021/02/image-62.png
+
+            -> For High Availability 
+
+                -> https://blog.siliconvalve.com/static/images/2020/as03.png
+
+        
+    -> To Utilize Azure Infrastructure we need to create Azure Account 
+
+        -> https://azure.microsoft.com/en-us/pricing/purchase-options/azure-account
+
+            -> Email ID 
+            -> Mobile Number 
+            -> Card (2 INR for verification)
+
+    
+    -> Azure Virtual Networks - VNET (VPC)
+
+        -> A Virtual Network (VNET) in Azure is a foundational service that enables you to 
+        build your own private network in the Azure cloud.
+
+        -> VNET lets you launch AZURE resources (servers, databases, storage etc) in a 
+        logically isolated virtual network that you define.
+
+        -> Having VNET is similar to having your own data center inside AZURE.
+
+            -> https://images.ctfassets.net/xxmwcynv5jdx/3T6K8Xxgb6jk10Zio5G1gw/da9ab697929d1be9036cd1cfc56f13c8/azure-vnet.png?w=1600&h=650&q=50&fit=fill&f=center
+
+            -> https://blog.siliconvalve.com/static/images/2020/as03.png    
+
+    -> Azure Subnet 
+    
+        -> An Azure subnet is a logical division of an Azure Virtual Network (VNet) 
+        that segments its address space, allowing you to organize and secure resources like 
+        VMs, databases, and PaaS services within specific IP ranges for 
+        better management and isolation. 
+        
+        -> Subnets enable fine-grained control(firewall) through Network Security Groups (NSGs) 
+        for traffic filtering
+
+        -> https://images.ctfassets.net/xxmwcynv5jdx/3T6K8Xxgb6jk10Zio5G1gw/da9ab697929d1be9036cd1cfc56f13c8/azure-vnet.png?w=1600&h=650&q=50&fit=fill&f=center
+
+
+        -> Most Popular Applications
+            
+            -> https://en.wikipedia.org/wiki/Programming_languages_used_in_most_popular_websites
+
+            -> https://aidanfinn.com/wp-content/uploads/2025/02/image-10.png
+
+        -> NOTE: How many resources (servers) can be hosted in a subnet ? 
+
+            -> Subnetting Rules 
+
+                -> A subnet is a range of IP addresses in the virtual network. 
+
+            -> Subnet Calculator 
+
+                -> https://mattrickard.com/static/image/how-to-calculate-a-cidr/1.webp
+
+        
+        -> Azure Network Reserved IP's 
+
+            -> Azure reserves the first four and last IP addresses for a total of 5 IP addresses 
+            within each subnet.
+
+        -> For example, the IP address range of 10.0.1.0/24 has the following reserved addresses:
+
+            10.0.1.0 : Network address
+            10.0.1.1 : Reserved by Azure for the default gateway
+            10.0.1.2, 10.0.1.3 : Reserved by Azure to map the Azure DNS
+            10.0.1.255 : Network broadcast address.
+
+                -> The addresses we can use are from only 10.0.1.4 - 10.0.1.254
+
+        10.0.0.0/16 -> 65636
+
+            10.0.0.0
+            10.0.0.1
+            10.0.0.2
+            .
+            .
+            10.0.0.255 
+            10.0.1.0
+            10.0.1.1
+            .
+            .
+            10.0.1.255
+            .
+            10.0.2.255
+            .
+            10.0.3.255
+
+            .
+            .
+            10.0.255.255
+
+
+            Myntra VNET - 10.0.0.0/16 (65536)
+
+            Myntra Web Subnet (Web Server) - 1k Servers 
+
+                -> 10.0.0.0/22
+
+                    -> 10.0.0.0 - Network address
+                    -> 10.0.0.1 - Reserved by Azure for the default gateway
+                    -> 10.0.0.2 - Azure DNS
+                    -> 10.0.0.3 - Azure DNS
+                    -> 10.0.0.4
+                    -> 10.0.0.5
+                    .
+                    .
+                    .
+                    -> 10.0.3.254
+                    -> 10.0.3.255 - Network broadcast address
+
+            Myntra App Subnet (App Server) - 1k Servers 
+
+                -> 10.0.4.0/22
+
+                    -> 10.0.4.0 - Network address
+                    -> 10.0.4.1 - Reserved by Azure for the default gateway
+                    -> 10.0.4.2 - Azure DNS
+                    -> 10.0.4.3 - Azure DNS
+                    -> 10.0.4.4
+                    -> 10.0.4.5
+                    .
+                    .
+                    .
+                    -> 10.0.7.254
+                    -> 10.0.7.255 - Network broadcast address
+
+
+            Myntra DB Subnet (DB Server) - 250 Servers 
+
+                -> 10.0.8.0/24
+
+                    -> 10.0.8.0 - Network address
+                    -> 10.0.8.1 - Reserved by Azure for the default gateway
+                    -> 10.0.8.2 - Azure DNS
+                    -> 10.0.8.3 - Azure DNS
+                    -> 10.0.8.4
+                    -> 10.0.8.5
+                    .
+                    .
+                    .
+                    -> 10.0.8.254
+                    -> 10.0.8.255 - Network broadcast address
+
+
+7th Feb 2026
+=============
+
+    -> Route Tables 
+
+        -> An Azure Route Table is a resource that controls network traffic flow 
+        within an Azure Virtual Network (VNet)
+
+        -> You associate a route table with subnets, directing traffic based on destination
+        (IP address range) and next hop(Internet, Gateway etc) 
+
+        -> Create a route table when you need to override Azure’s default routing. 
+        For example, you can route traffic to a network virtual appliance or to your 
+        on-premises network for inspection. 
+        A route table contains routes and is associated to one or more subjects.
+
+    -> Considering Our VNET 
+
+        -> We Want Two Types Of Traffic Flow 
+
+            -> Public: Which should be Accessible From Internet 
+
+                -> Web & Application Subnets
+
+            -> Private: Which should not be Accessible From Internet 
+
+                -> Database Subnet 
+
+    -> Network Security Groups - NSG (Firewalls)
+
+        -> Azure network security group is used to "filter" network traffic to and from 
+        Azure resources in an Azure virtual network.
+
+        -> A network security group contains "security rules" that "allow" or "deny" 
+        inbound network traffic.
+
+        -> For each rule, you can specify source and destination, port, and protocol.
+
+        -> Based On Application Requirements we define rules in NSG 
+
+            -> Myntra Web NSG 
+
+                -> SSH Access (Admin Access For Linux Server) - Port 22 
+                -> HTTP Access (For Web Applications) - Port 80 
+                -> HTTPS Access (For Web Applications Secured) - Port 443 
+
+            -> Myntra App NSG 
+
+                -> SSH Access (Admin Access For Linux Server) - Port 22 
+                -> HTTP Access (For Backends / API) - Port 8080 (8000 - 3000 - 5000 etc)
+
+            -> Myntra DB NSG 
+
+                -> SSH Access (Admin Access For Linux Server) - Port 22 
+                -> MySQL DB Access - Port 3306 
+
+            -> NOTE: If using Windows Server, add RDP Access (Admin Access For Windows Server) 
+            - Port 3389 
+
+
+        -> Azure Public IP's 
+
+            -> Public IP addresses allow Internet resources to communicate inbound to 
+            Azure resources. Public IP addresses enable Azure resources to communicate to 
+            Internet and public-facing Azure services.
+
+            -> For Myntra Web Server & App Server we need an Public IP's as they are 
+            internet facing entities.
+
+        -> Azure Private IP's 
+
+            -> Private IP addresses allow Azure resources to communicate within Vnet i.e
+            Intranet or local network
+
+            -> NOTE: Every Server will have private ip as primary address and optionally   
+            we can add public ip for Internet access
+
+    -> Azure Network Interfaces - NIC 
+
+        -> In Azure, a Network Interface (NIC) is a crucial resource that connects a 
+        Virtual Machine (VM) to a Virtual Network (VNet), enabling communication 
+        with the internet, other Azure services, and on-premises networks. 
+        Each NIC acts as a virtual network adapter, allowing for IP configurations 
+        (private/public, static/dynamic), association with Network Security Groups (NSGs) 
+        for traffic filtering, and even multiple NICs per VM for advanced connectivity.
+
+        -> NOTE: Azure By default creates Network Interface, when we create Virtual Machine and 
+        we cannot attach Custom Network Interface, so we stop server and detach default Network Interface
+        and later attach our Custom Network Interface, this is must in GUI   
+
+        -> NOTE: If we Use CLI we can overcome above, while creating Virtual Machine in CLI
+        we can attach our custom Network Interface directly 
